@@ -19,6 +19,10 @@ impl Image {
         Image(Rc::new(RefCell::new(texture)))
     }
 
+    pub fn empty(gfx: &Graphics) -> Result<Image, GolemError> {
+        let texture = Texture::new(&gfx.ctx)?;
+        Ok(Image::new(texture))
+    }
     /// Create an image with a given width and height
     ///
     /// Either source the data from an array of bytes, or create a blank image.
