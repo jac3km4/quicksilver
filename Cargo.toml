@@ -30,11 +30,11 @@ ttf = ["font", "elefont/rusttype", "rusttype"]
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-blinds = { version = "0.1.4", default-features = false, features = ["gl", "image"] }
+blinds = { version = "0.1.6", default-features = false, features = ["gl", "image"] }
 bytemuck = "1.0"
 elefont = { version = "0.1.3", features = ["rusttype", "unicode-normalization"], optional = true }
 gestalt = { version = "0.1", optional = true }
-golem = { version = "0.1.3", features = ["std"] }
+golem = { version = "0.1.7", features = ["std"] }
 image = { version = "0.22", default-features = false, features = ["png_codec", "jpeg"] }
 instant = "0.1.2"
 log = "0.4"
