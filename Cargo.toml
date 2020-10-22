@@ -34,7 +34,7 @@ blinds = { version = "0.1.6", default-features = false, features = ["gl", "image
 bytemuck = "1.0"
 elefont = { version = "0.1.3", features = ["rusttype", "unicode-normalization"], optional = true }
 gestalt = { version = "0.1", optional = true }
-golem = { version = "0.1.7", features = ["std"] }
+golem = { git = "https://github.com/jac3km4/golem", branch = "invalid-assert", features = ["std"] }
 image = { version = "0.22", default-features = false, features = ["png_codec", "jpeg"] }
 instant = "0.1.2"
 log = "0.4"
